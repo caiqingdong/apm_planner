@@ -125,19 +125,20 @@ Rectangle {
 
         Button {
             id: flightDataView
-            label: "FLIGHT DATA"
+            label: qsTr("FLIGHT DATA")
             image: "./resources/apmplanner/toolbar/flightdata.png"
             selected: true
             onClicked: {
                 clearHighlightedButtons()
                 globalObj.triggerFlightView()
                 setSelected()
+                label = qsTr("FLIGHT DATA")
             }
         }
 
         Button {
             id: flightPlanView
-            label: "FLIGHT PLAN"
+            label: qsTr("FLIGHT PLAN")
             image: "./resources/apmplanner/toolbar/flightplanner.png"
             onClicked: {
                 clearHighlightedButtons()
@@ -148,7 +149,7 @@ Rectangle {
 
         Button {
             id: initialSetupView
-            label: "INITIAL SETUP"
+            label: qsTr("INITIAL SETUP")
             image: "./resources/apmplanner/toolbar/light_initialsetup_icon.png"
 //            margins: 8
             onClicked: {
@@ -160,7 +161,7 @@ Rectangle {
 
         Button {
             id: configTuningView
-            label: "CONFIG/TUNING"
+            label: qsTr("CONFIG/TUNING")
             image: "./resources/apmplanner/toolbar/light_tuningconfig_icon.png"
 //            margins: 8
             onClicked: {
@@ -172,7 +173,7 @@ Rectangle {
 
         Button {
             id: plotView
-            label: "GRAPHS"
+            label: qsTr("GRAPHS")
             image: "./resources/apmplanner/toolbar/simulation.png"
             onClicked: {
                 clearHighlightedButtons()

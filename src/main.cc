@@ -70,6 +70,10 @@ int main(int argc, char *argv[])
 #endif
 
     QGCCore core(argc, argv);
+
+    QTranslator translator;
+    translator.load(":/zh-CN.qm");
+    qApp->installTranslator(&translator);
     // init the logging mechanism
     QsLogging::Logger& logger = QsLogging::Logger::instance();
     logger.setLoggingLevel(QsLogging::DebugLevel);

@@ -265,8 +265,9 @@ include(QGCSetup.pri)
 RESOURCES += qgroundcontrol.qrc
 
 TRANSLATIONS += \
-    es-MX.ts \
-    en-US.ts
+    translations/es-MX.ts \
+    translations/en-US.ts \
+    translations/zh-CN.ts
 
 DEPENDPATH += \
     . \
