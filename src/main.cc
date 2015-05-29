@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
     QGCCore core(argc, argv);
 
     QTranslator translator;
-    translator.load(":/zh-CN.qm");
+    translator.load(":/translations/zh-CN.qm");
     qApp->installTranslator(&translator);
     // init the logging mechanism
     QsLogging::Logger& logger = QsLogging::Logger::instance();
